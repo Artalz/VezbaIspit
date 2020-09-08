@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Artikal>
+    <Naziv sifra="1">Jogurt</Naziv>
+    <DatumIzrade>
+        <Dan>3</Dan>
+        <Mesec>7</Mesec>
+        <Godina>2010</Godina>
+    </DatumIzrade>
+    <Cena tip="din">120</Cena>
+    <Kompanija>
+        <ImeKompanije>Imlek</ImeKompanije>
+        <Adresa>Beograd</Adresa>
+    </Kompanija>
+    <Email tip="sluzbeni">email@mail.com</Email>
+    <Email tip="privatni">emailp@mail.com</Email>
+</Artikal>
