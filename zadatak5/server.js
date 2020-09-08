@@ -28,3 +28,36 @@ function dodajArtikal(id,naziv,cena,imeKompanije){
     };
     artikli.push(noviArtikal);
 }
+
+function sviArtikli(imeKompanije){
+    let pomocna = [];
+    for(let i = 0; i < artikli.length; i++){
+        if(artikli[i].imeKompanije == imeKompanije){
+            pomocna.push(artikli[i]);
+            return pomocna;
+        }else{
+            return artikli;
+        }
+    }
+}
+
+function obrisiArtikal(id){
+    let novi = [];
+    for(let i=0; i < artikli.length; i++){
+        if(artikli[i].id != id){
+            novi.push(artikli[i])
+        }
+    }
+    artikli = novi
+    return novi
+}
+
+function izmeniArtikal(id, naziv, cena, imeKompanije){
+    for (let i = 0; i < artikli.length; i++){
+        if (artikli[i].id == id){
+            artikli[i].naziv = naziv;
+            artikli[i].cena = cena;
+            artikli[i].imeKompanije = imeKompanije;
+        }
+    }
+}
