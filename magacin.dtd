@@ -1,6 +1,7 @@
 <!ELEMENT Artikal (Naziv, DatumIzrade, Cena, Kompanija, Email)>
 
 <!ELEMENT Naziv (#PCDATA)>
+<!ATTLIST Naziv sifra CDATA>
 
 <!ELEMENT DatumIzrade (Dan, Mesec, Godina)>
 <!ELEMENT Dan (#PCDATA)>
